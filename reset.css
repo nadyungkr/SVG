@@ -21,9 +21,9 @@ q:after,q:before{content:"";}
 
 abbr,acronym{border:none;}
 
-label,img,input,select,textarea,button{vertical-align:middle;}
+label,img,input,select,textarea,button{ vertical-align:middle;}
 
-hr{display:none;}
+hr{display:none; }
 
 .blind,.hidden{position:absolute;left:0;width:0;height:0;font-size:1;line-height:0;text-indent:-9999px;
 overflow:hidden;}
