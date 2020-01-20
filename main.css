@@ -4,27 +4,8 @@ header{
     height:50px;
     position:fixed;
     z-index:9999;
-    outline:5px solid yellowgreen;
 }
 
-header h1{
-    outline:1px solid red;
-    width:18px;
-    height:50px;
-    color:#fff;
-    z-index:9998;
-}
-
-header nav{
-    outline:1px solid red;
-}
-
-header nav ul li{
-    color:#fff;
-    font-weight:900;
-    font-size:20px;
-    z-index:9997;
-}
 
 .here {
 	background-image: radial-gradient(50% 176%, #000203 80%, #000000 100%);
@@ -94,10 +75,59 @@ header nav ul li{
     position:relative;
 }
 
-#contents svg{
+#contents .juci{
     width:600px;
     height:600px;
 }
+
+#contents .jucisvg{
+    width:100%;
+    height:800px;
+    position:absolute;
+    top:5%;
+    left:0;
+    z-index: 9996;
+}
+
+#contents .jucisvg svg{
+    position:absolute;
+    top:0;
+    left:50%:;
+    width:100%;
+    height:100%;
+    z-index: 9995;
+}
+
+@keyframes blob {
+    0%{transform:translate(40px, -40px); r: 20;}
+    100%{transform:translate(0, 10px); r: 40;}
+  }
+  
+  @keyframes hover {
+    0%{transform:translate(40px, -40px);}
+    100%{transform:translate(30px, 40px);}
+  }
+  
+  #b1 {animation: blob 9s ease-in-out alternate infinite;}
+  #b2 {animation: blob 8s ease-in-out alternate infinite;}
+  #b3 {animation: blob 6s ease-in-out alternate infinite;}
+  
+  #c1 {
+    animation: hover 9s ease-in-out alternate infinite;
+    transition: r .3s ease-out;
+  }
+  #c2 {
+    animation: hover 6.5s ease-in-out alternate infinite;
+    transition: r .3s ease-out;
+  }
+  #c3 {
+    animation: hover 7s ease-in-out alternate infinite;
+    transition: r .3s ease-out;
+  }
+  
+  #c1:hover {r: 20}
+  #c2:hover {r: 15}
+  #c3:hover {r: 20}
 
 
 #contents h2{
@@ -113,6 +143,7 @@ header nav ul li{
 #contents h2 span{
     font-size:80px;
     color:#fff;
+}
 
 section{
     width:100%;

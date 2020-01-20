@@ -10,14 +10,29 @@
 </head>
 <body>
     <header>
-       <h1 class="logo"><a href="#">2</a></h1>
-       <nav>
-           <ul>
-                <li><a href="#contents1">1</a></li>
-                <li><a href="#contents2">2</a></li>
-                <li><a href="#contactme">3</a></li>
-           </ul>
+       <h1 class="logo"><a href="#top">2</a></h1>
+       <nav class="menu">
+            
        </nav>
+      <!-- filters -->
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <filter id="shadowed-goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                <feBlend in2="shadow" in="goo" result="goo" />
+                <feBlend in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feBlend in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
+          </defs>
+      </svg>
     </header>
     <main>
         <div class="here">
@@ -123,31 +138,65 @@
                 </svg>
             </div>
             <section id="contents"><?xml version="1.0" encoding="utf-8"?>
-                <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
-                <style type="text/css">
-                    .st0{fill:url(#SVGID_1_);}
-                    .st1{fill:url(#SVGID_2_);}
-                </style>
-                <g>
-                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="200" x2="400" y2="200">
-                        <stop  offset="0" style="stop-color:#F08A2F"/>
-                        <stop  offset="1" style="stop-color:#CD2668"/>
+                <div class="juci">
+                    <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill:url(#SVGID_1_);}
+                        .st1{fill:url(#SVGID_2_);}
+                    </style>
+                    <g>
+                        <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="200" x2="400" y2="200">
+                            <stop  offset="0" style="stop-color:#F08A2F"/>
+                            <stop  offset="1" style="stop-color:#CD2668"/>
+                        </linearGradient>
+                        <circle class="st0" cx="200" cy="200" r="200"/>
+                    </g>
+                    <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="268.2727" y1="12.4223" x2="131.4274" y2="388.4017">
+                        <stop  offset="0" style="stop-color:#662DAD"/>
+                        <stop  offset="0.1238" style="stop-color:#7A2C9F;stop-opacity:0.8762"/>
+                        <stop  offset="0.3779" style="stop-color:#9E2987;stop-opacity:0.6221"/>
+                        <stop  offset="0.6163" style="stop-color:#B82776;stop-opacity:0.3837"/>
+                        <stop  offset="0.8306" style="stop-color:#C8266C;stop-opacity:0.1694"/>
+                        <stop  offset="1" style="stop-color:#CD2668;stop-opacity:0"/>
                     </linearGradient>
-                    <circle class="st0" cx="200" cy="200" r="200"/>
-                </g>
-                <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="268.2727" y1="12.4223" x2="131.4274" y2="388.4017">
-                    <stop  offset="0" style="stop-color:#662DAD"/>
-                    <stop  offset="0.1238" style="stop-color:#7A2C9F;stop-opacity:0.8762"/>
-                    <stop  offset="0.3779" style="stop-color:#9E2987;stop-opacity:0.6221"/>
-                    <stop  offset="0.6163" style="stop-color:#B82776;stop-opacity:0.3837"/>
-                    <stop  offset="0.8306" style="stop-color:#C8266C;stop-opacity:0.1694"/>
-                    <stop  offset="1" style="stop-color:#CD2668;stop-opacity:0"/>
-                </linearGradient>
-                <circle class="st1" cx="200" cy="200" r="200"/>
-                </svg>
-                
+                    <circle class="st1" cx="200" cy="200" r="200"/>
+                    </svg>
+                </div>
+                <div class="jucisvg">
+                    <svg viewbox="0 0 200 200" width="200" height="200">
+                        <!--Filter-->
+                        <filter id="gooey">
+                          <feGaussianBlur stdDeviation="5" in="SourceGraphic" result="blur" />
+                          <feColorMatrix mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 30 -20" in="blur" result="goo" />
+                          <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                        </filter>
+                        <!--Gradients-->
+                        <linearGradient id="yellow" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" style="stop-color:#FFCC00;stop-opacity:1" />
+                          <stop offset="100%" style="stop-color:#FF9500;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="pink" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" style="stop-color:#ff2d55;stop-opacity:1" />
+                          <stop offset="100%" style="stop-color:#FF3B30;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="blue" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" style="stop-color:#007AFF;stop-opacity:1" />
+                          <stop offset="100%" style="stop-color:#5856D6;stop-opacity:1" />
+                        </linearGradient>
+                        <!--blob-->
+                        <g style="filter:url('#gooey')" fill="rgb(124, 202, 51)">
+                            <circle id="b1" cx="-70" cy="70" r="10" />
+                            <circle id="b2" cx="-85" cy="105" r="10" />
+                            <circle id="b3" cx="-40" cy="80" r="10" />
+                        </g>
+                        <!--orbs-->
+                        <circle id="c1" cx="220" cy="60" r="10" fill="url(#pink)" />
+                        <circle id="c2" cx="260" cy="80" r="12" fill="url(#yellow)" />
+                        <circle id="c3" cx="190" cy="90" r="14" fill="url(#blue)" />
+                      </svg>
+                </div>
                 <h2><span>HELLO<br/>
                     NaDyungkr</span></h2>
             </section>
