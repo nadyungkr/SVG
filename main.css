@@ -100,35 +100,35 @@ header{
 
 @keyframes blob {
     0%{transform:translate(40px, -40px); r: 20;}
-    100%{transform:translate(0, 10px); r: 40;}
+    100%{transform:translate(-20px, 10px); r: 40;}
   }
   
   @keyframes hover {
-    0%{transform:translate(40px, -40px);}
-    100%{transform:translate(30px, 40px);}
+    0%{transform:translate(60px, -20px);}
+    50%{transform:translate(40px, 40px);}
+    100%{transform:translate(50px, 20px);}
   }
   
-  #b1 {animation: blob 9s ease-in-out alternate infinite;}
-  #b2 {animation: blob 8s ease-in-out alternate infinite;}
-  #b3 {animation: blob 6s ease-in-out alternate infinite;}
+#b1 {animation: blob 9s ease-in-out alternate infinite;}
+#b2 {animation: blob 8s ease-in-out alternate infinite;}
+#b3 {animation: blob 6s ease-in-out alternate infinite;}
   
-  #c1 {
-    animation: hover 9s ease-in-out alternate infinite;
+#c1 {
+    animation: hover 4s ease-in-out alternate infinite;
     transition: r .3s ease-out;
   }
-  #c2 {
-    animation: hover 6.5s ease-in-out alternate infinite;
+#c2 {
+    animation: hover 12s ease-in-out alternate infinite;
     transition: r .3s ease-out;
   }
-  #c3 {
-    animation: hover 7s ease-in-out alternate infinite;
+#c3 {
+    animation: hover 8s ease-in-out alternate infinite;
     transition: r .3s ease-out;
   }
   
-  #c1:hover {r: 20}
-  #c2:hover {r: 15}
-  #c3:hover {r: 20}
-
+#c1:hover {r: 20}
+#c2:hover {r: 18}
+#c3:hover {r: 22}
 
 #contents h2{
         position:absolute;
