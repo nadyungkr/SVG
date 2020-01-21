@@ -3,9 +3,29 @@ header{
     width:100%;
     height:50px;
     position:fixed;
+    top:5%;
+    left:2%;
     z-index:9999;
 }
 
+header .ham{
+}
+
+header nav{
+    color:#fff;
+    border:1px solid white;
+    width:120px;
+    height:200px;
+}
+
+header .ham_top,.ham_middle,.ham_bottom{
+    width:40px;
+    margin:5px 0;
+    height:5px;
+    background:darkgoldenrod;
+    box-sizing:border-box;
+
+}
 
 .here {
 	background-image: radial-gradient(50% 176%, #000203 80%, #000000 100%);
